@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Add Expense</title>
+</head>
+
+<body>
+
+    <h1>💸 Add Expense</h1>
+
+    <form action="/expense" method="post">
+
+        <label>Amount:</label>
+        <input type="number" name="amount" step="0.01" required>
+
+        <br><br>
+
+        <label>Date:</label>
+        <input type="date" name="date" required>
+
+        <br><br>
+
+        <label>Category:</label>
+        <input type="text" name="category" required>
+
+        <br><br>
+
+        <label>Payment Method:</label>
+        <select name="paymentMethod" required>
+            <option value="">Select</option>
+            <option value="Cash">Cash</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+        </select>
+
+        <br><br>
+
+        <label>Description:</label>
+        <input type="text" name="description">
+
+        <br><br>
+
+        <button type="submit">Save Expense</button>
+
+    </form>
+
+    <br>
+
+    <a href="/dashboard">Back to Dashboard</a>
+
+</body>
+
+</html>

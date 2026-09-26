@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>My Expense Tracker</title>
+</head>
+
+<body>
+
+    <h1>💰 My Expense Tracker</h1>
+
+    <h2>
+        Welcome, <span th:text="${username}"></span>! 👋
+    </h2>
+
+    <p>You are successfully logged in.</p>
+
+    <hr>
+
+    <h3>Dashboard</h3>
+
+    <p>Income: ₹0</p>
+    <p>Expenses: ₹0</p>
+    <p>Balance: ₹0</p>
+
+    <br>
+
+    <a href="/expense">
+        <button>Add Expense</button>
+    </a>
+
+</body>
+</html>
